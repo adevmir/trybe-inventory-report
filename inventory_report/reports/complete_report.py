@@ -12,9 +12,6 @@ class CompleteReport(SimpleReport):
         products_string = ""
         for company, quant in products_dict.items():
             products_string += f"- {company}: {quant}\n"
-        print(f"{simple_report}\n"
-                f"Produtos estocados por empresa:\n"
-                f"{products_string}")
         return (f"{simple_report}\n"
                 f"Produtos estocados por empresa:\n"
                 f"{products_string}")
